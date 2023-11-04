@@ -1,0 +1,15 @@
+@mixin flexCenter($direction, $content, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $align;
+}
+
+@mixin image($imgpath, $height, $width:100%, $bg-size:cover) {
+  background-image: url('#{$imgpath}');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $bg-size;
+  height: $height;
+  width: $width;
+}
