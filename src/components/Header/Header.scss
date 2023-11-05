@@ -1,0 +1,44 @@
+@use '../../styles/mixins.scss' as *;
+
+.header {
+  width: 100%;
+  height: 6.9rem;
+  padding: 2rem 1.5rem 0 0;
+  &--wrapper {
+    height: 100%;
+    width: 100%;
+    .header__nav {
+      display: flex;
+      border: none;
+      height: 4.9rem;
+      .header__logo {
+        margin: 0 3.2rem 2rem 2rem;
+        display: inline-block;
+        @include image("../../assets/menu-mobile.svg",2.8rem,6rem,contain);
+      }
+      .header--trigger-label {
+        height: 3rem;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        &::after {
+          display: inline-block;
+          content: "";
+          border-width: 5px;
+          border-style: solid;
+          border-color: transparent;
+          border-top-color:#000;
+          transform: scaleX(0.8);
+          margin: 0 0 -0.3rem 0.8rem;
+        }
+      }
+      .header__nav--links {
+        
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
