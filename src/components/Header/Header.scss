@@ -1,9 +1,11 @@
 @use '../../styles/mixins.scss' as *;
+@use '../../styles/variables.scss' as *;
 
 .header {
   width: 100%;
   height: 6.9rem;
   padding: 2rem 1.5rem 0 0;
+  position: relative;
   &--wrapper {
     height: 100%;
     width: 100%;
@@ -15,11 +17,13 @@
         margin: 0 3.2rem 2rem 2rem;
         display: inline-block;
         @include image("../../assets/menu-mobile.svg",2.8rem,6rem,contain);
+        z-index: 10;
       }
       .header--trigger-label {
         height: 3rem;
         margin-bottom: 1.5rem;
         font-size: 2rem;
+        z-index: 10;
         &::after {
           display: inline-block;
           content: "";
@@ -31,8 +35,15 @@
           margin: 0 0 -0.3rem 0.8rem;
         }
       }
-      .header__nav--links {
-        
+      .header__primary-wrapper {
+        position: absolute;
+        min-height: 100vh;
+        width: 100vw;
+        left: 0;
+        top:0;
+        padding: 8.75rem 1.875rem 0 1.875rem;
+        background-color: $blue;
+        z-index: 5;
       }
     }
   }
@@ -42,3 +53,20 @@
   display: none;
 }
 
+.is-expanded {
+    color:white;
+    .header__nav {
+      .header__logo {
+        filter: invert(100%);
+      }
+      .header--trigger-label {
+        &::after {
+          content: "";
+          margin: 0 0 0.2rem 1rem;
+          border-width: 5px;
+          border-color: transparent;
+          border-bottom-color:white;
+        }
+      }
+  }
+}
