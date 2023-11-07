@@ -45,41 +45,76 @@
         background-color: $blue;
         z-index: 5;
       }
+      .header__nav-links {
+        position: absolute;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 3.5rem;
+        padding: 0 2.5rem 0 12.5rem;
+        .header__link {
+          display: inline-block;
+          padding:0 1.25rem;
+        }
+        .header__link:first-child {
+          padding: 0 1.25rem 0 0;
+        }
+        .header__link:nth-child(8) {
+          color:$orange;
+        }
+        .header__link:nth-child(9) {
+          padding: 0 0 0 1.25rem;
+          margin-right: 0;
+          margin-left: auto;
+          font-size: 1.75rem;
+          color: $blue;
+        }
+        .header__link:nth-child(10) {
+          font-size: 1.75rem;
+          margin-right: 0;
+          margin-left: 0.3125rem;
+          padding-right: 0;
+        }
+      }
     }
   }
 }
-
 .off-screen {
   transform: translateY(-100%);
   transition: transform 0.2s;
 }
 
-.is-expanded {
-    color:white;
-    transform: translateY(0);
-    .header__nav {
-      .header__logo {
-        filter: invert(100%);
-      }
-      .header--trigger-label {
-        &::after {
-          content: "";
-          margin: 0 0 0.2rem 1rem;
-          border-width: 5px;
-          border-color: transparent;
-          border-bottom-color:white;
+@media (max-width: 1279px) {
+  .is-expanded {
+      color:white;
+      transform: translateY(0);
+      .header__nav {
+        .header__logo {
+          filter: invert(100%);
         }
-      }
-      .header__primary-wrapper {
-        .header__nav-links {
-          font-size: 2.5rem;
-          padding-right: 2.5rem;
-          .header__link {
-            display: block;
-            padding-right: 1.25rem;
-            margin-bottom: 2.5rem;
+        .header--trigger-label {
+          &::after {
+            content: "";
+            margin: 0 0 0.2rem 1rem;
+            border-width: 5px;
+            border-color: transparent;
+            border-bottom-color:white;
           }
         }
-      }
+        .header__primary-wrapper {
+          .header__nav-links {
+            font-size: 2.5rem;
+            padding-right: 2.5rem;
+            .header__link {
+              display: block;
+              padding-right: 1.25rem;
+              margin-bottom: 2.5rem;
+            }
+          }
+        }
+    }
   }
 }
+
+

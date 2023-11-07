@@ -13,12 +13,7 @@ const textHeader =
     }
   },
   "es": {
-    "header": {
-      "home": "Inicio",
-      "about": "Acerca de",
-      "services": "Servicios",
-      "contact": "Contacto"
-    },
+    "header": ["Live", "Push", "Note", "Link", "Tienda", "Packs", "Ayuda", "Más", "Prueba Live gratis", "Inicia sesión o regístrate"],
     "mainSection": {
       "welcome": "¡Bienvenidos a nuestro sitio web!",
       "learnMore": "Aprende más"
