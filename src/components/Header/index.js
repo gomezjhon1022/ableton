@@ -31,8 +31,8 @@ return (
       <nav className='header__nav'>
         <a className='header__logo'></a>
         {isDesktop?
-            <ul className='header__nav-links'>
-              {textList.header.map((element)=>(<li className='header__link' key={element}><a>{element}</a></li>))}
+            <ul className='header__nav-links-desktop'>
+              {textList.header.map((element)=>(<li className='header__link-desktop' key={element}><a>{element}</a></li>))}
             </ul>
           :<>
             <button className='header--trigger-label' onClick={()=>handleMenu()}>Menu</button>
@@ -43,7 +43,6 @@ return (
             </div>
           </>
         }
-        
       </nav>
     </div>
   </header>
