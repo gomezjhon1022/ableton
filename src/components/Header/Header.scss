@@ -78,6 +78,51 @@
           margin-left: 0.3125rem;
           padding-right: 0;
         }
+        .header__buttonMore {
+          font-size: 2rem;
+          cursor: pointer;
+          .header__iconPlus {
+              height:1.5rem;
+              width: 1.5rem;
+              display: inline-block;
+              margin-left: 0.3125rem;
+              position: relative;
+              top:0.0625rem;
+            .header__iconPlus-expanded::before {
+              height:0.25rem;
+              width: 1.5rem;
+              content: "";
+              display: block;
+              background-color: currentColor;
+              position: absolute;
+              top: 50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+            }
+            .header__iconPlus-expanded::after {
+              height: 1.5rem;
+              width: 0.25rem;
+              content: "";
+              display: block;
+              background-color: currentColor;
+              position: absolute;
+              top: 50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+            }
+            .header__iconPlus-collapse::before {
+              height:0.25rem;
+              width: 1.5rem;
+              content: "";
+              display: block;
+              background-color: currentColor;
+              position: absolute;
+              top: 50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+            }
+          }
+        }
       }
     }
   }
