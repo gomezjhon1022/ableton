@@ -57,6 +57,19 @@ return (
               <ul className='header__nav-links'>
                 {textList.header.map((element)=>(<li className='header__link' key={element}><a>{element}</a></li>))}
               </ul>
+              <div className='header__menuMore-wrapper'>
+                <section className='header__menuMoreOn'>
+                <h3 className='header__menuMoreOn__title'>{textList.menuMoreOn[0]}</h3>
+                <ul className='header__menuMoreOn__link-container'>
+                  {textList.menuMoreOn.slice(1).map((element)=>(
+                          <li className="header__menuMoreOn__link" key={element}><a>{element}</a></li>
+                      )
+                    )
+                  }
+
+                </ul>
+                </section>
+              </div>
             </div>
           </>
         }

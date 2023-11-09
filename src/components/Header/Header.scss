@@ -141,6 +141,7 @@
           filter: invert(100%);
         }
         .header--trigger-label {
+          font-size: 2.5rem;
           &::after {
             content: "";
             margin: 0 0 0.2rem 1rem;
@@ -158,7 +159,34 @@
               padding-right: 1.25rem;
               margin-bottom: 2.5rem;
             }
+            .header__link:nth-child(10) {
+              padding: 0;
+              margin-bottom: 1.75rem;
+              font-size: 1.75rem;
+            }
           }
+          .header__menuMore-wrapper {
+            .header__menuMoreOn {
+              padding-top: 1.25rem;
+              &__title {
+                font-size: 2rem;
+                padding-bottom: 1.25rem;
+              }
+              &__link-container {
+                font-weight: bold;
+                display: inline-block;
+                line-height: 1.5;
+                .header__menuMoreOn__link {
+                  padding-right: 1.25rem;
+                  margin-bottom: 1.75rem;
+                  font-size: 1.4rem;
+                  cursor: pointer;
+
+                }
+              }
+            }
+          }
+
         }
     }
   }
