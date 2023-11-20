@@ -69,6 +69,27 @@ return (
 
                 </ul>
                 </section>
+                <section className='header__menuMoreFrom'>
+                  <h3 className='header__menuMoreFrom__title'>{textList.menuMoreFrom[0]}</h3>
+                  <div className='header__menuMoreFrom-wraper'>
+                    <div className='header__slideable'>
+                      <ul className='header__menuMoreFrom-row'>
+                        {textList.menuMoreFrom.slice(1).map((element, index)=> (
+                          index % 2 === 0 &&(
+                              <li key={element} className='header__menuMoreFrom-item'>
+                                <a>
+                                  <div>
+                                    <h4>{textList.menuMoreFrom[index+1]}</h4>
+                                    <p>{textList.menuMoreFrom[index+2]}</p>
+                                  </div>
+                                </a>
+                              </li>
+                          )
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </section>
               </div>
             </div>
           </>
