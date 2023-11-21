@@ -66,7 +66,6 @@ return (
                       )
                     )
                   }
-
                 </ul>
                 </section>
                 <section className='header__menuMoreFrom'>
@@ -94,6 +93,11 @@ return (
             </div>
           </>
         }
+      </nav>
+      <nav className='header__nav-secondary'>
+        <ul>
+          {textList.menuMoreOn.slice(5).map((element)=> <li><a>{element}</a></li>)}
+        </ul>
       </nav>
     </div>
   </header>
