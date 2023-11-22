@@ -61,7 +61,9 @@ return (
                 <section className='header__menuMoreOn'>
                 <h3 className='header__menuMoreOn__title'>{textList.menuMoreOn[0]}</h3>
                 <ul className='header__menuMoreOn__link-container'>
-                  {textList.menuMoreOn.slice(1).map((element)=>(
+                  {textList.menuMoreOn.slice(1).filter((_, index) =>
+                    isDesktop? index !==4:index!==5
+                  ).map((element)=>(
                           <li className="header__menuMoreOn__link" key={element}><a>{element}</a></li>
                       )
                     )
@@ -96,7 +98,7 @@ return (
       </nav>
       <nav className='header__nav-secondary'>
         <ul>
-          {textList.menuMoreOn.slice(5).map((element)=> <li><a>{element}</a></li>)}
+          {textList.menuMoreOn.slice(6).map((element)=> <li><a>{element}</a></li>)}
         </ul>
       </nav>
     </div>
