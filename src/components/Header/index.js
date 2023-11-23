@@ -40,7 +40,7 @@ return (
                   <button className='header__buttonMore' onClick={()=>handleButtonPlus()}>
                     <span>{element}</span>
                     <span className='header__iconPlus' >
-                      {isExpandedButtonMore?
+                      {!isExpandedButtonMore?
                         <span className='header__iconPlus-expanded'></span>
                         :<span className='header__iconPlus-collapse'></span>
                       }
@@ -96,9 +96,43 @@ return (
           </>
         }
       </nav>
+      {isExpandedButtonMore&&<div className='header__nav-more'>
+        <section className='header__nav-more-on'>
+          <h3>{textList.menuMoreOn[0]}</h3>
+          <ul>
+            {textList.menuMoreOn.slice(1).filter((_, index) =>index!==5).map((element)=>(
+                          <li className="h" key={element}><a>{element}</a></li>
+                      )
+                    )
+                  }
+          </ul>
+        </section>
+        <section className='header__nav-more-from'>
+          <h3>{textList.menuMoreFrom[0]}</h3>
+          <div className='header__menuMoreFrom-wraper'>
+            <div className='header__slideable'>
+              <ul className='header__menuMoreFrom-row'>
+                {textList.menuMoreFrom.slice(1).map((element, index)=> (
+                  index % 2 === 0 &&(
+                      <li key={element} className='header__menuMoreFrom-item'>
+                        <a>
+                          <div>
+                            <h4>{textList.menuMoreFrom[index+1]}</h4>
+                            <p>{textList.menuMoreFrom[index+2]}</p>
+                          </div>
+                        </a>
+                      </li>
+                  )
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>}
+      <div className='header__nav-separator'></div>
       <nav className='header__nav-secondary'>
         <ul>
-          {textList.menuMoreOn.slice(6).map((element)=> <li><a>{element}</a></li>)}
+          {textList.menuMoreOn.slice(6).map((element)=> <li key={element}><a>{element}</a></li>)}
         </ul>
       </nav>
     </div>

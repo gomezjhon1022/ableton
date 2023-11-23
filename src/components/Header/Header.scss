@@ -4,7 +4,7 @@
 .header {
   width: 100%;
   height: 6.9rem;
-  padding: 2rem 1.5rem 0 0;
+  padding: 2.5rem 1.5rem 0 0;
   position: relative;
   &--wrapper {
     height: 100%;
@@ -125,6 +125,74 @@
           }
         }
       }
+    }
+    .header__nav-more {
+      width: 100%;
+      padding: 1.25rem 2.5rem 3.75rem;
+      &-on {
+        h3 {
+          font-size: 3rem;
+          padding-bottom: 0.25rem;
+          line-height: 1.5;
+          font-weight: 500;
+        }
+        ul {
+          display: flex;
+          font-size: 2rem;
+          li {
+            cursor: pointer;
+          }
+          li:first-child {
+            padding-right: 1.25rem;
+          }
+          li:last-child {
+            padding-left: 1.25rem;
+          }
+          li:not(:first-child):not(:last-child) {
+            padding: 0 1.25rem;
+          }
+        }
+      }
+      &-from {
+        padding-top: 3.125rem;
+        width: 100%;
+        h3 {
+          font-size: 3rem;
+          padding-bottom: 0.25rem;
+          font-weight: 500;
+        }
+        .header__menuMoreFrom-wraper {
+          // background-color: pink;
+          width: 100%;
+                position: relative;
+                .header__slideable {
+                  font-size: 2rem;
+                  padding: 0 0 2.5rem;
+                  .header__menuMoreFrom-row {
+                    display: flex;
+                    margin-left: -2.5rem;
+                    margin-right: -2.5rem;
+                    .header__menuMoreFrom-item {
+                      padding: 0 2.5rem;
+                      min-width: 26rem;
+                      cursor: pointer;
+                      a div h4 {
+                        font-weight: 500;
+                      }
+                      a div p {
+                        line-height: 1.5;
+                      }
+                    }
+                  }
+                }
+        }
+      }
+    }
+    .header__nav-separator {
+      height: 0;
+      width: 100%;
+      display: block;
+      border-top: 2px solid #eee;
     }
     .header__nav-secondary {
       height: 7.5rem;
