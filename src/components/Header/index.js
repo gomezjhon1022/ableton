@@ -1,19 +1,17 @@
 import { useEffect, useState } from 'react';
 import { textHeader } from '../../assets/text/textHeader';
+import { useResponsive } from '../../customhooks/useResponsive';
 import './Header.scss';
 
 function Header(){
+  const {isDesktop, handleResize}=useResponsive();
   const [language, setLanguage]=useState('en');
   const textList = textHeader[language];
   const [isExpanded, setIsExpanded] =useState(false);
-  const [isDesktop, setIsDesktop]=useState(false);
   const [isExpandedButtonMore, setIsExpandedButtonMore]=useState(false);
+
   const handleMenu=()=>{
     setIsExpanded(!isExpanded);
-  }
-
-  const handleResize = () => {
-    setIsDesktop(window.innerWidth>1279);
   }
 
   useEffect(() => {
