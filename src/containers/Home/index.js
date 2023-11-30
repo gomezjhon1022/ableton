@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AbletonContext } from "../../components/Context";
 import { textHome } from "../../assets/text/textHome";
+import './Home.scss';
 
 function Home() {
   const { language } = useContext(AbletonContext)
@@ -11,10 +12,11 @@ function Home() {
       <main>
         <div className="page-about">
           <div className="page-about__header">
+            <div className="ableton-image"></div>
           </div>
           <div className="page-about__text">
             <div className="body-text">
-              <h1>{textList.links[0]}<a>{textList.links[1]}</a> , <a>{textList.links[2]}</a>{textList.links[3]}<a>{textList.links[4]}</a>{textList.title[0]}</h1>
+              <h1>{textList.links[0]}<a href="#">{textList.links[1]}</a> , <a href="#">{textList.links[2]}</a>{textList.links[3]}<a href="#">{textList.links[4]}</a>{textList.title[0]}</h1>
               <p>{textList.paragraph[0]}</p>
             </div>
           </div>
