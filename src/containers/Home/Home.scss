@@ -78,15 +78,68 @@
         background-repeat: no-repeat;
       }
     }
-    .youtube {
-      width: 66.66667vw;
-      height: calc(66.66667vw / (16 / 9));
-      margin-left: auto;
-      margin-right: auto;
-      .video {
-        width: 100%;
-        height: 100%;
-        box-sizing: content-box ;
+    .page-about__collage-people {
+      margin-bottom: 8.33333vw;
+      padding: 8.33333vw;
+      position: relative;
+      display: flex;
+      align-items: center;
+      .page-about__collage__background {
+        background-color: #B6FFC0;
+        width:58.33333vw;
+        height: 75vw;
+        left: 0;
+        position:absolute;
+        top:0;
+        z-index:0;
+      }
+      .page-about__collage__container {
+        width: 33.33333vw;
+        position: relative;
+        z-index: 1;
+        .page-about__media {
+          width: 33.33333vw;
+          height: 25vw;
+          margin-left: 0;
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          background-image: url("https://ableton-production.imgix.net/about/photo-3.jpg?fit=crop");
+          background-position: 50% 50%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          z-index: 1;
+        }
+        .page-about__media:last-child {
+          background-image: url("https://ableton-production.imgix.net/about/photo-4.jpg?fit=crop");
+          margin-top: 8.33333vw;
+          display: inline-block;
+        }
+      }
+      .page-about__media {
+        display:inline-block;
+        width: 41.66667vw;
+        height: 41.66667vw;
+        margin-left:8.33333vw;
+        background-image: url("https://ableton-production.imgix.net/about/photo-5.jpg?fit=crop");
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position:relative;
+      }
+    }
+    .page-about__media-video {
+      margin-bottom: 8.33333vw;
+      .youtube {
+        width: 66.66667vw;
+        height: calc(66.66667vw / (16 / 9));
+        margin-left: auto;
+        margin-right: auto;
+        .video {
+          width: 100%;
+          height: 100%;
+          box-sizing: content-box ;
+        }
       }
     }
   }

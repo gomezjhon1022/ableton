@@ -32,15 +32,15 @@ function Home() {
                 <p>{textList.paragraph[1]}</p>
             </div>
           </div>
-          <div className="youtube">
-            <iframe
-            className="video"
-            title="youtube player"
-            sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-            src={`https://youtube.com/embed/9SbnhgjeyXA?si=YAOfe_Pe3BriWUlb?autoplay=0`}>
-            </iframe>
-          </div>
-          <div className="page-about__media">
+          <div className="page-about__media-video">
+            <div className="youtube">
+              <iframe
+              className="video"
+              title="youtube player"
+              sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+              src={`https://youtube.com/embed/9SbnhgjeyXA?si=YAOfe_Pe3BriWUlb?autoplay=0`}>
+              </iframe>
+            </div>
 
           </div>
           <div className="page-about__text">
@@ -49,7 +49,14 @@ function Home() {
               <p>{textList.paragraph[2]}</p>
             </div>
           </div>
-          <div className="page-about__collage"></div>
+          <div className="page-about__collage-people">
+            <div className="page-about__collage__background"></div>
+            <div className="page-about__collage__container">
+              <div className="page-about__media"></div>
+              <div className="page-about__media"></div>
+            </div>
+            <div className="page-about__media"></div>
+          </div>
           <div className="page-about__text">
             <div className="body-text">
               <h1>{textList.title[3]}</h1>
