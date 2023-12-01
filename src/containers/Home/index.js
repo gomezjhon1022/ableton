@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AbletonContext } from "../../components/Context";
 import { textHome } from "../../assets/text/textHome";
 import './Home.scss';
@@ -6,6 +6,7 @@ import './Home.scss';
 function Home() {
   const { language } = useContext(AbletonContext)
   const textList = textHome[language];
+  // const [youtubeVideo] = useState("9SbnhgjeyXA?si=YAOfe_Pe3BriWUlb")
   return (
   <>
     <div className="home">
@@ -25,11 +26,19 @@ function Home() {
             <div className="page-about__media"></div>
             <div className="page-about__media"></div>
           </div>
-          <div className="page-agout__text has-video">
+          <div className="page-about__text has-video">
             <div className="body-text">
                 <h1>{textList.title[1]}</h1>
                 <p>{textList.paragraph[1]}</p>
             </div>
+          </div>
+          <div className="youtube">
+            <iframe
+            className="video"
+            title="youtube player"
+            sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+            src={`https://youtube.com/embed/9SbnhgjeyXA?si=YAOfe_Pe3BriWUlb?autoplay=0`}>
+            </iframe>
           </div>
           <div className="page-about__media">
 
