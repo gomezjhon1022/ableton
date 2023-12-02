@@ -40,6 +40,9 @@
           line-height: 1.5;
         }
       }
+      .address p:nth-child(2) {
+        margin-bottom: 2rem;
+      }
     }
     .page-about__collage {
       margin-bottom: 8.33333vw;
@@ -140,6 +143,53 @@
           height: 100%;
           box-sizing: content-box ;
         }
+      }
+    }
+    .page-about__media-large {
+      margin-left: 8.33333vw;
+      margin-right: 8.33333vw;
+      margin-bottom: 8.33333vw;
+      width: auto;
+      img {
+        height: auto;
+        max-width: 100%;
+        border: 0;
+        object-fit: fill;
+      }
+    }
+    .page-about__collage--improving {
+      .bg-lavender {
+        background-color: #D5B3FF;
+      }
+      .page-about__collage__background {
+        width: 66.66667vw;
+        height: 58.33333vw;
+        left: 16.66667vw;
+      }
+      .page-about__collage__media {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        z-index: 1;
+      }
+      .page-about__collage__media:nth-child(2) {
+        width: 33.333333vw;
+        height: 25vw;
+        margin-left: 8.33333vw;
+        background-image: url("https://ableton-production.imgix.net/about/photo-6-a.jpg?dpr=2.0&fit=crop&h=320&ixjsv=1.1.3&q=50&w=427");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+      .page-about__collage__media:nth-child(3) {
+        width: 41.66667vw;
+        height: 41.66667vw;
+        margin-left: 16.66667vw;
+
+        background-image: url("https://ableton-production.imgix.net/about/photo-7.jpg?fit=crop");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
       }
     }
   }

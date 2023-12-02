@@ -41,7 +41,6 @@ function Home() {
               src={`https://youtube.com/embed/9SbnhgjeyXA?si=YAOfe_Pe3BriWUlb?autoplay=0`}>
               </iframe>
             </div>
-
           </div>
           <div className="page-about__text">
             <div className="body-text">
@@ -55,7 +54,9 @@ function Home() {
               <div className="page-about__media"></div>
               <div className="page-about__media"></div>
             </div>
-            <div className="page-about__media"></div>
+            <div className="page-about__media">
+              <img />
+            </div>
           </div>
           <div className="page-about__text">
             <div className="body-text">
@@ -63,15 +64,21 @@ function Home() {
               <p>{textList.paragraph[3]}</p>
             </div>
           </div>
-          <div className="page-about__media"></div>
+          <div className="page-about__media page-about__media-large">
+            <img src="https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?" />
+          </div>
           <div className="page-about__text">
-            <div className="body-text">
+            <div className="body-text address">
               <h1>{textList.title[4]}</h1>
               <p>{textList.paragraph[4]}</p>
               <p>{textList.paragraph[5]}</p>
             </div>
           </div>
-          <div className="page-about__collage"></div>
+          <div className="page-about__collage page-about__collage--improving">
+            <div className="page-about__collage__background bg-lavender"></div>
+            <div className="page-about__collage__media"></div>
+            <div className="page-about__collage__media"></div>
+          </div>
           <div className="page-about__text">
             <div className="body-text">
               <h1>{textList.title[5]}</h1>
