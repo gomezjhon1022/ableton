@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { AbletonContext } from "../../components/Context";
 import { textHome } from "../../assets/text/textHome";
 import './Home.scss';
@@ -6,7 +6,6 @@ import './Home.scss';
 function Home() {
   const { language } = useContext(AbletonContext)
   const textList = textHome[language];
-  // const [youtubeVideo] = useState("9SbnhgjeyXA?si=YAOfe_Pe3BriWUlb")
   return (
   <>
     <div className="home">
@@ -85,7 +84,16 @@ function Home() {
               <p>{textList.paragraph[6]}</p>
             </div>
           </div>
-          <div className="page-about__jobs-teaser"></div>
+          <div className="page-about__jobs-teaser">
+            <div className="page-about__jobs-teaser__media"></div>
+            <div className="page-about__jobs-teaser__text">
+              <div className="page-about__jobs-teaser__text__wrapper">
+                <div className="body-text">
+                  <h1>We're really proud of the work we've done so far. But there's so much more to come. If you'd like to be a part of it, please join us. <a href="#" className="has-arrow">See latest jobs</a></h1>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
