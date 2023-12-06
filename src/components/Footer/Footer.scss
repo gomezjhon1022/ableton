@@ -1,3 +1,91 @@
-.footer {
-
+.main-footer {
+  font-size: 2rem;
+  font-weight: normal;
+  &__separator {
+    padding-top:8.33333vw;
+    position: relative;
+    background-color: #fff;
+  }
+  &__separator::after {
+    content:"";
+    display: block;
+    height: 0;
+    border-top:2px solid #efefef;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  &__container {
+    padding: 0 8.33333vw;
+    .main-footer__content {
+      padding-top: 8.33333vw;
+      .main-footer__row::after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+      .main-footer__col {
+        float:left;
+        padding-right:1.25rem;
+        padding-bottom: 4.16667vw;
+        img {
+          height: auto;
+          max-width: 100%;
+          border: 0;
+        }
+        .main-footer__basics__logo {
+          width:18.8rem
+        }
+        .main-footer__h3 {
+          margin: 0;
+          font-size: 2rem;
+          font-weight: bold;
+        }
+        .abl-block {
+          display: block;
+        }
+        .main-footer__newsletter__form {
+          margin-top: 2rem;
+          .main-footer__form__group {
+            display: flex;
+            .main-footer__form__field {
+              flex:1;
+              input {
+                width: 100%;
+                padding: 0.8rem 1.5rem;
+                background: transparent;
+                background-color: #eee;
+                border: 0;
+                user-select: none;
+                font-weight: normal;
+                border-radius: 0;
+              }
+            }
+            .main-footer__button {
+              display: inline-block;
+              padding: 0.7rem 3rem;
+              font-weight: bold;
+              color:#fff;
+              background: blue;
+              border: 0;
+              border-radius: 0;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .main-footer__col--full{
+        width: 100%;
+      }
+      .main-footer__col--md {
+        width: 40%;
+      }
+      .main-footer__col--start {
+        float:right;
+      }
+      .main-footer__pr-0 {
+        padding-right: 0;
+      }
+    }
+  }
 }

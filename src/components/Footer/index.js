@@ -7,22 +7,18 @@ function Footer () {
     <div className='main-footer__container'>
       <div className='main-footer__content'>
         <div className='main-footer__row'>
-          <div className='main-footer__col'>
-            <img className='main-footer__basics__logo'/>
+          <div className='main-footer__col main-footer__col--full'>
+            <img className='main-footer__basics__logo' src="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/ableton-wordmark.c025e3df71b3.svg"/>
           </div>
         </div>
         <div className='main-footer__row'>
-          <div className='main-footer__col'>
+          <div className='main-footer__col main-footer__col--md main-footer__col--start main-footer__pr-0'>
             <label for="sign-up-to-newsletter">
-              <span className='main-footer__h3'>Sign up to our newsletter</span>
+              <span className='main-footer__h3 abl-block'>Sign up to our newsletter</span>
               <span>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.</span>
             </label>
             <div>
               <form className='main-footer__newsletter__form'>
-                <input type='hidden' name='other'></input>
-                <input type='hidden' name='mailing_list' id='id_newsletter-mailing_list'></input>
-                <input type='hidden' name='source' id='id_newsletter-source'></input>
-                <input type='hidden' name='next' id='id_newsletter-next'></input>
                 <div className='main-footer__form__group'>
                   <div className='main-footer__form__field'>
                     <input id='sign-up-to-newsletter' name='email' type='email' placeholder='Email Adress'></input>
