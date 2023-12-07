@@ -28,7 +28,7 @@ function Footer () {
               </form>
             </div>
           </div>
-          <div className='main-footer__col'>
+          <div className='main-footer__col main-footer__col-md'>
             <ul className='main-footer__list'>
               <li>
                 <a className='main-footer__has-arrow'>Register Live or Push</a>
@@ -42,23 +42,19 @@ function Footer () {
             </ul>
             <ul className='main-footer__social'>
               <li className='main-footer__social-listitem'>
-                <a className='main-footer__social-button'>
-                  <span className='abl-visually-hidden'>Abelton Facebook</span>
+                <a className='main-footer__social-button main-footer__social-button--facebook'>
                 </a>
               </li>
               <li className='main-footer__social-listitem'>
-                <a className='main-footer__social-button'>
-                  <span className='abl-visually-hidden'>Abelton Twitter</span>
+                <a className='main-footer__social-button main-footer__social-button--twitter'>
                 </a>
               </li>
               <li className='main-footer__social-listitem'>
-                <a className='main-footer__social-button'>
-                  <span className='abl-visually-hidden'>Abelton Youtube</span>
+                <a className='main-footer__social-button main-footer__social-button--youtube'>
                 </a>
               </li>
               <li className='main-footer__social-listitem'>
-                <a className='main-footer__social-button'>
-                  <span className='abl-visually-hidden'>Abelton Instagram</span>
+                <a className='main-footer__social-button main-footer__social-button--instagram'>
                 </a>
               </li>
             </ul>
