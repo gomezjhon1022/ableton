@@ -23,12 +23,12 @@ function Footer () {
                   <div className='main-footer__form__field'>
                     <input id='sign-up-to-newsletter' name='email' type='email' placeholder='Email Adress'></input>
                   </div>
-                  <input className='main-footer__button' type='submit'></input>
+                  <input className='main-footer__button' type='submit' value="Sign up"></input>
                 </div>
               </form>
             </div>
           </div>
-          <div className='main-footer__col main-footer__col-md'>
+          <div className='main-footer__col main-footer__col-sm'>
             <ul className='main-footer__list'>
               <li>
                 <a className='main-footer__has-arrow'>Register Live or Push</a>
@@ -59,7 +59,7 @@ function Footer () {
               </li>
             </ul>
           </div>
-          <div className='main-footer__col'>
+          <div className='main-footer__col main-footer__col-sm'>
             <h3 className='main-footer__h3'>Education</h3>
             <ul className='main-footer__list'>
               <li>
@@ -385,17 +385,17 @@ function Footer () {
           </div>
         </div>
         <div className='main-footer__row'>
-          <div className='main-footer__col'>
+          <div className='main-footer__col main-footer__col--full main-footer__pb-1u main-footer__pr-0'>
             <div className='main-footer__secondary__link-list'>
-              <a className='main-footer__secondary__link-list__item'>Contact Us</a>
-              <a className='main-footer__secondary__link-list__item'>Press Resources</a>
-              <a className='main-footer__secondary__link-list__item'>Legal Info</a>
-              <a className='main-footer__secondary__link-list__item'>Privacy Policy</a>
-              <a className='main-footer__secondary__link-list__item'>Cookie Settings</a>
-              <a className='main-footer__secondary__link-list__item'>Imprint</a>
+              <a className='main-footer__secondary__link-list__item' href='#'>Contact Us</a>
+              <a className='main-footer__secondary__link-list__item' href='#'>Press Resources</a>
+              <a className='main-footer__secondary__link-list__item' href='#'>Legal Info</a>
+              <a className='main-footer__secondary__link-list__item' href='#'>Privacy Policy</a>
+              <a className='main-footer__secondary__link-list__item' href='#'>Cookie Settings</a>
+              <a className='main-footer__secondary__link-list__item' href='#'>Imprint</a>
             </div>
             <div className='main-footer__secondary__signature'>
-              <img className='main-footer__secondary__signature__logo'/>
+              <img className='main-footer__secondary__signature__logo' src='https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/ableton-hallmark.ef5355379032.svg'/>
               <span className='main-footer__secondary__signature__label'>Made in Berlin</span>
             </div>
           </div>

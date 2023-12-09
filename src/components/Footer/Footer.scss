@@ -130,8 +130,51 @@
             display: inline-block;
           }
         }
+        .main-footer__secondary__link-list {
+          width: auto;
+          margin-top: 2rem;
+          display: inline-block;
+          vertical-align: middle;
+          .main-footer__secondary__link-list__item {
+            display: inline-block;
+            margin-right: 1.75rem;
+            font-weight: 600;
+            font-size: 1.75rem;
+            color: inherit;
+            line-height: 1.5;
+          }
+        }
+        .main-footer__secondary__signature {
+          float: right;
+          width: auto;
+          margin-left: 6rem;
+          margin-top:2rem;
+          text-align:left;
+          .main-footer__secondary__signature__logo {
+            float: right;
+            vertical-align: middle;
+            height: auto;
+            max-width: 100%;
+            border: 0;
+          }
+          img {
+            height: auto;
+            max-width: 100%;
+            border: 0;
+          }
+          .main-footer__secondary__signature__label {
+            vertical-align: middle;
+            font-size: 1.75rem;
+            margin-right: 1.75rem;
+            margin-left: 0;
+            line-height: 1.5;
+            font-weight: 600;
+            float: right;
+          }
+        }
       }
       .main-footer__list {
+        cursor: pointer;
         .main-footer__has-arrow::after {
           content:"\00a0›";
         }
@@ -150,6 +193,7 @@
             background-repeat: no-repeat;
             background-size: contain;
             margin-right: 1.25rem;
+            cursor: pointer;
           }
           .main-footer__social-button--facebook {
             background-image: url("../../assets//images/facebook.svg");
@@ -181,8 +225,11 @@
       .main-footer__pr-0 {
         padding-right: 0;
       }
-      .main-footer__col-sd {
+      .main-footer__col-sm {
         width: 30%;
+      }
+      .main-footer__pb-1u {
+        padding-bottom: 8.333333vw;
       }
     }
   }
