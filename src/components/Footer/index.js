@@ -1,6 +1,13 @@
+import { useContext } from 'react';
+import { AbletonContext } from '../Context';
 import './Footer.scss'
 
 function Footer () {
+  const { setLanguage } = useContext(AbletonContext);
+
+  const handleLanguageChange = (event) => {
+    setLanguage(event.target.value);
+  }
   return (
   <footer className="main-footer">
     <div className='main-footer__separator'></div>
@@ -103,9 +110,9 @@ function Footer () {
                   <form>
                     <input type='hidden'></input>
                     <label className='abl-visually-hidden'></label>
-                    <select className='js-language-chooser'>
-                      <option selected>English</option>
-                      <option>Español</option>
+                    <select className='js-language-chooser' onChange={handleLanguageChange} >
+                      <option selected value={"en"}>English</option>
+                      <option value={"es"}>Español</option>
                     </select>
                     <input type='hidden'></input>
                   </form>
