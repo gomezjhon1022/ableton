@@ -89,7 +89,7 @@ function Home() {
             <div className="page-about__jobs-teaser__text">
               <div className="page-about__jobs-teaser__text__wrapper">
                 <div className="body-text">
-                  <h1>We're really proud of the work we've done so far. But there's so much more to come. If you'd like to be a part of it, please join us. <a href="#" className="has-arrow">See latest jobs</a></h1>
+                  <h1>{textList.title[6]}<a href="#" className="has-arrow">{textList.paragraph[7]}</a></h1>
                 </div>
               </div>
             </div>

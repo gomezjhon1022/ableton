@@ -1,10 +1,11 @@
 import { useContext } from 'react';
 import { AbletonContext } from '../Context';
+import { textFooter } from '../../assets/text/textFooter';
 import './Footer.scss'
 
 function Footer () {
-  const { setLanguage } = useContext(AbletonContext);
-
+  const { language, setLanguage } = useContext(AbletonContext);
+  const textList = textFooter[language];
   const handleLanguageChange = (event) => {
     setLanguage(event.target.value);
   }
@@ -21,16 +22,16 @@ function Footer () {
         <div className='main-footer__row'>
           <div className='main-footer__col main-footer__col--md main-footer__col--start main-footer__pr-0'>
             <label for="sign-up-to-newsletter">
-              <span className='main-footer__h3 abl-block'>Sign up to our newsletter</span>
-              <span>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.</span>
+              <span className='main-footer__h3 abl-block'>{textList.newsletter.title}</span>
+              <span>{textList.newsletter.description}</span>
             </label>
             <div>
               <form className='main-footer__newsletter__form'>
                 <div className='main-footer__form__group'>
                   <div className='main-footer__form__field'>
-                    <input id='sign-up-to-newsletter' name='email' type='email' placeholder='Email Adress'></input>
+                    <input id='sign-up-to-newsletter' name='email' type='email' placeholder={textList.newsletter.placeholder}></input>
                   </div>
-                  <input className='main-footer__button' type='submit' value="Sign up"></input>
+                  <input className='main-footer__button' type='submit' value={textList.newsletter.button}></input>
                 </div>
               </form>
             </div>
@@ -38,13 +39,13 @@ function Footer () {
           <div className='main-footer__col main-footer__col-sm'>
             <ul className='main-footer__list'>
               <li>
-                <a className='main-footer__has-arrow'>Register Live or Push</a>
+                <a className='main-footer__has-arrow'>{textList.links.registerLiveOrPush}</a>
               </li>
               <li>
-                <a className='main-footer__has-arrow'>About Ableton</a>
+                <a className='main-footer__has-arrow'>{textList.links.aboutAbleton}</a>
               </li>
               <li>
-                <a className='main-footer__has-arrow'>Jobs</a>
+                <a className='main-footer__has-arrow'>{textList.links.jobs}</a>
               </li>
             </ul>
             <ul className='main-footer__social'>
@@ -67,21 +68,21 @@ function Footer () {
             </ul>
           </div>
           <div className='main-footer__col main-footer__col-sm'>
-            <h3 className='main-footer__h3'>Education</h3>
+            <h3 className='main-footer__h3'>{textList.education.title}</h3>
             <ul className='main-footer__list'>
               <li>
                 <a className='main-footer__has-arrow'>
-                  Offers for students and teachers
+                  {textList.education.offersForStudentsAndTeachers}
                 </a>
               </li>
               <li>
                 <a className='main-footer__has-arrow'>
-                  Ableton for the Classroom
+                  {textList.education.abletonForTheClassroom}
                 </a>
               </li>
               <li>
                 <a className='main-footer__has-arrow'>
-                  Ableton for Colleges and Universities
+                  {textList.education.abletonForCollegesAndUniversities}
                 </a>
               </li>
             </ul>
@@ -89,21 +90,21 @@ function Footer () {
         </div>
         <div className='main-footer__row'>
           <div className='main-footer__col main-footer__col-sm'>
-            <h3 className='main-footer__h3'>Community</h3>
+            <h3 className='main-footer__h3'>{textList.community.title}</h3>
             <ul className='main-footer__list'>
               <li>
-                <a className='main-footer__has-arrow'>Find Ableton User Groups</a>
+                <a className='main-footer__has-arrow'>{textList.community.findAbletonUserGroups}</a>
               </li>
               <li>
-                <a className='main-footer__has-arrow'>Find Certified Training</a>
+                <a className='main-footer__has-arrow'>{textList.community.findCertifiedTraining}</a>
               </li>
               <li>
-                <a className='main-footer__has-arrow'>Become a Certified Trainer</a>
+                <a className='main-footer__has-arrow'>{textList.community.becomeACertifiedTrainer}</a>
               </li>
             </ul>
           </div>
           <div className='main-footer__col main-footer__col--md'>
-            <h3 className='main-footer__h3'>Language and Location</h3>
+            <h3 className='main-footer__h3'>{textList.languageAndLocation.title}</h3>
             <div className='main-footer__language-selector'>
               <div className='main-footer__secondary__select main-footer__form__element--select has-auto-width'>
                 <div className='form__element_field main-footer__icon-arrow-small'>
@@ -123,8 +124,8 @@ function Footer () {
                   <form>
                     <input type='hidden'></input>
                     <select>
-                      <option>Please choose</option>
-                      <optgroup label="Common Countries">
+                      <option>{textList.languageAndLocation.chooseCountry}</option>
+                      <optgroup label={textList.languageAndLocation.commonCountries}>
                         <option value="us" selected>United States</option>
                         <option value="uk">United Kingdom</option>
                         <option value="fr">France</option>
@@ -134,7 +135,7 @@ function Footer () {
                         <option value="cn">China</option>
                         <option value="au">Australia</option>
                       </optgroup>
-                      <optgroup label="All Countries/Regions">
+                      <optgroup label={textList.languageAndLocation.allCountries}>
                         <option value="af">Afghanistan</option>
                         <option value="ax">Aland Islands</option>
                         <option value="al">Albania</option>
@@ -394,16 +395,16 @@ function Footer () {
         <div className='main-footer__row'>
           <div className='main-footer__col main-footer__col--full main-footer__pb-1u main-footer__pr-0'>
             <div className='main-footer__secondary__link-list'>
-              <a className='main-footer__secondary__link-list__item' href='#'>Contact Us</a>
-              <a className='main-footer__secondary__link-list__item' href='#'>Press Resources</a>
-              <a className='main-footer__secondary__link-list__item' href='#'>Legal Info</a>
-              <a className='main-footer__secondary__link-list__item' href='#'>Privacy Policy</a>
-              <a className='main-footer__secondary__link-list__item' href='#'>Cookie Settings</a>
-              <a className='main-footer__secondary__link-list__item' href='#'>Imprint</a>
+              <a className='main-footer__secondary__link-list__item' href='#'>{textList.linksSecondary.contactUs}</a>
+              <a className='main-footer__secondary__link-list__item' href='#'>{textList.linksSecondary.pressResources}</a>
+              <a className='main-footer__secondary__link-list__item' href='#'>{textList.linksSecondary.legalInfo}</a>
+              <a className='main-footer__secondary__link-list__item' href='#'>{textList.linksSecondary.privacyPolicy}</a>
+              <a className='main-footer__secondary__link-list__item' href='#'>{textList.linksSecondary.cookieSettings}</a>
+              <a className='main-footer__secondary__link-list__item' href='#'>{textList.linksSecondary.imprint}</a>
             </div>
             <div className='main-footer__secondary__signature'>
               <img className='main-footer__secondary__signature__logo' src='https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/ableton-hallmark.ef5355379032.svg'/>
-              <span className='main-footer__secondary__signature__label'>Made in Berlin</span>
+              <span className='main-footer__secondary__signature__label'>{textList.signature.madeInBerlin}</span>
             </div>
           </div>
         </div>
