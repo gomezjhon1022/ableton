@@ -5,8 +5,8 @@ import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <div >
+      <BrowserRouter basename='/ableton'>
         <Layout>
           <Routes>
             <Route path='/' element={<Home/>}></Route>
