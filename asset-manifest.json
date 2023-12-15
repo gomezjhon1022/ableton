@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ableton/static/css/main.cd167eb6.css",
+    "main.css": "/ableton/static/css/main.1cde5216.css",
     "main.js": "/ableton/static/js/main.b91d63ab.js",
     "static/media/ableton.svg": "/ableton/static/media/ableton.bd36c2b50647d24b7a13.svg",
     "static/media/instagram.svg": "/ableton/static/media/instagram.f6b80afe96697d24bb90.svg",
@@ -10,11 +10,11 @@
     "static/media/youtube.svg": "/ableton/static/media/youtube.91b694847185919bfe36.svg",
     "static/media/menu-mobile.svg": "/ableton/static/media/menu-mobile.76be0bb6f8403ecadea6.svg",
     "static/media/arrowdown.svg": "/ableton/static/media/arrowdown.1f069725aeae0d037d43.svg",
-    "main.cd167eb6.css.map": "/ableton/static/css/main.cd167eb6.css.map",
+    "main.1cde5216.css.map": "/ableton/static/css/main.1cde5216.css.map",
     "main.b91d63ab.js.map": "/ableton/static/js/main.b91d63ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd167eb6.css",
+    "static/css/main.1cde5216.css",
     "static/js/main.b91d63ab.js"
   ]
 }
