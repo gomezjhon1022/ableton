@@ -1,6 +1,8 @@
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/variables.scss' as *;
 
 .main-footer {
-  font-size: 2rem;
+  font-size: $font-size-medium;
   font-weight: normal;
   &__separator {
     padding-top:8.33333vw;
@@ -39,7 +41,7 @@
         }
         .main-footer__h3 {
           margin: 0;
-          font-size: 2rem;
+          font-size: $font-size-medium;
           font-weight: bold;
         }
         .abl-block {
@@ -105,13 +107,8 @@
               position: absolute;
               top: 0;
               right: 0;
-              width: 3rem;
-              height: 100%;
               background-color: transparent;
-              background-image: url(../../assets/images/arrowdown.svg);
-              background-position: 50% 50%;
-              background-repeat: no-repeat;
-              background-size: 40%;
+              @include image("../../assets/images/arrowdown.svg",100%,3rem,40%);
               pointer-events: none;
             }
             select {
@@ -139,7 +136,7 @@
             display: inline-block;
             margin-right: 1.75rem;
             font-weight: 600;
-            font-size: 1.75rem;
+            font-size: $font-size-small;
             color: inherit;
             line-height: 1.5;
           }
@@ -164,7 +161,7 @@
           }
           .main-footer__secondary__signature__label {
             vertical-align: middle;
-            font-size: 1.75rem;
+            font-size: $font-size-small;
             margin-right: 1.75rem;
             margin-left: 0;
             line-height: 1.5;

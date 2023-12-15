@@ -22,7 +22,7 @@
       .header--trigger-label {
         height: 3rem;
         margin-bottom: 1.5rem;
-        font-size: 2rem;
+        font-size: $font-size-medium;
         z-index: 10;
         &::after {
           display: inline-block;
@@ -47,7 +47,7 @@
       }
       .header__nav-links-desktop {
         position: absolute;
-        font-size: 2rem;
+        font-size: $font-size-medium;
         display: flex;
         align-items: center;
         width: 100%;
@@ -69,17 +69,17 @@
           padding: 0 0 0 1.25rem;
           margin-right: 0;
           margin-left: auto;
-          font-size: 1.75rem;
+          font-size: $font-size-small;
           color: $blue;
         }
         .header__link-desktop:nth-child(10) {
-          font-size: 1.75rem;
+          font-size: $font-size-small;
           margin-right: 0;
           margin-left: 0.3125rem;
           padding-right: 0;
         }
         .header__buttonMore {
-          font-size: 2rem;
+          font-size: $font-size-medium;
           cursor: pointer;
           .header__iconPlus {
               height:1.5rem;
@@ -130,14 +130,14 @@
       padding: 1.25rem 2.5rem 3.75rem;
       &-on {
         h3 {
-          font-size: 3rem;
+          font-size: $font-size-xlarge;
           padding-bottom: 0.25rem;
           line-height: 1.5;
           font-weight: 500;
         }
         ul {
           display: flex;
-          font-size: 2rem;
+          font-size: $font-size-medium;
           li {
             cursor: pointer;
           }
@@ -156,7 +156,7 @@
         padding-top: 3.125rem;
         width: 100%;
         h3 {
-          font-size: 3rem;
+          font-size: $font-size-xlarge;
           padding-bottom: 0.25rem;
           font-weight: 500;
         }
@@ -164,7 +164,7 @@
           width: 100%;
                 position: relative;
                 .header__slideable {
-                  font-size: 2rem;
+                  font-size: $font-size-medium;
                   padding: 0 0 2.5rem;
                   .header__menuMoreFrom-row {
                     display: flex;
@@ -200,7 +200,7 @@
         padding: 2.125rem 2.5rem 1.875rem;
         li {
           display: inline-block;
-          font-size: 1.75rem;
+          font-size: $font-size-small;
           height: fit-content;
           font-weight: 500;
           cursor: pointer;
@@ -232,7 +232,7 @@
           filter: invert(100%);
         }
         .header--trigger-label {
-          font-size: 2.5rem;
+          font-size: $font-size-large;
           &::after {
             content: "";
             margin: 0 0 0.2rem 1rem;
@@ -243,7 +243,7 @@
         }
         .header__primary-wrapper {
           .header__nav-links {
-            font-size: 2.5rem;
+            font-size: $font-size-large;
             padding-right: 2.5rem;
             .header__link {
               display: block;
@@ -253,14 +253,14 @@
             .header__link:nth-child(10) {
               padding: 0;
               margin-bottom: 1.75rem;
-              font-size: 1.75rem;
+              font-size: $font-size-small;
             }
           }
           .header__menuMore-wrapper {
             .header__menuMoreOn {
               padding-top: 1.25rem;
               &__title {
-                font-size: 2.5rem;
+                font-size: $font-size-large;
                 padding-bottom: 1.25rem;
               }
               &__link-container {
@@ -270,7 +270,7 @@
                 .header__menuMoreOn__link {
                   padding-right: 1.25rem;
                   margin-bottom: 1.75rem;
-                  font-size: 1.75rem;
+                  font-size: $font-size-small;
                   cursor: pointer;
                 }
               }
@@ -280,14 +280,14 @@
               padding-top: 1.25rem;
               &__title {
                 padding-bottom: 1.25rem;
-                font-size: 2.5rem;
+                font-size: $font-size-large;
                 font-weight: bold;
               }
               &-wraper {
                 width: 100%;
                 position: relative;
                 .header__slideable {
-                  font-size: 1.75rem;
+                  font-size: $font-size-small;
                   overflow-x: auto;
                   padding: 0 0 2.5rem;
                   .header__menuMoreFrom-row {
